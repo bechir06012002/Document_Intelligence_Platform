@@ -1,0 +1,326 @@
+[
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "EN-2026-1001",
+      "invoice_total": "121.00",
+      "purchase_order": "PO-4001",
+      "subtotal": "100.00",
+      "total_tax": "21.00",
+      "vendor_name": "Bright Spark Europe S.A.S.",
+      "vendor_vat_id": "FR61954506077"
+    },
+    "expected_issue_codes": [],
+    "filename": "01-en-happy-classic.pdf",
+    "language": "en",
+    "layout": "classic",
+    "pages": 1,
+    "scenario": "happy_path"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "NL-2026-2042",
+      "invoice_total": "290.40",
+      "purchase_order": "PO-4002",
+      "subtotal": "240.00",
+      "total_tax": "50.40",
+      "vendor_name": "Helder Schoonmaak B.V.",
+      "vendor_vat_id": "NL123456782B90"
+    },
+    "expected_issue_codes": [],
+    "filename": "02-nl-happy-compact.pdf",
+    "language": "nl",
+    "layout": "compact",
+    "pages": 1,
+    "scenario": "happy_path"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "DE-2026-3098",
+      "invoice_total": "544.50",
+      "purchase_order": "PO-4003",
+      "subtotal": "450.00",
+      "total_tax": "94.50",
+      "vendor_name": "Rhein Wartung GmbH",
+      "vendor_vat_id": "DE136695976"
+    },
+    "expected_issue_codes": [],
+    "filename": "03-de-happy-modern.pdf",
+    "language": "de",
+    "layout": "modern",
+    "pages": 1,
+    "scenario": "happy_path"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "FR-2026-4017",
+      "invoice_total": "217.80",
+      "purchase_order": "PO-4004",
+      "subtotal": "180.00",
+      "total_tax": "37.80",
+      "vendor_name": "Lumière Technique S.A.S.",
+      "vendor_vat_id": "FR40303265045"
+    },
+    "expected_issue_codes": [],
+    "filename": "04-fr-happy-classic.pdf",
+    "language": "fr",
+    "layout": "classic",
+    "pages": 1,
+    "scenario": "happy_path"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "NL-2026-5005",
+      "invoice_total": "387.20",
+      "purchase_order": "PO-4005",
+      "subtotal": "320.00",
+      "total_tax": "67.20",
+      "vendor_name": "Groen Onderhoud B.V.",
+      "vendor_vat_id": null
+    },
+    "expected_issue_codes": [
+      "vendor_vat_id_required"
+    ],
+    "filename": "05-nl-missing-vendor-vat.pdf",
+    "language": "nl",
+    "layout": "compact",
+    "pages": 1,
+    "scenario": "missing_vendor_vat"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "DE-2026-6006",
+      "invoice_total": "108.90",
+      "purchase_order": "PO-4006",
+      "subtotal": "90.00",
+      "total_tax": "18.90",
+      "vendor_name": "Alpen Elektro GmbH",
+      "vendor_vat_id": "DE-NOT-A-VAT"
+    },
+    "expected_issue_codes": [
+      "vendor_vat_id_invalid"
+    ],
+    "filename": "06-de-invalid-vendor-vat.pdf",
+    "language": "de",
+    "layout": "modern",
+    "pages": 1,
+    "scenario": "invalid_vendor_vat"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "FR40303265045",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "FR-2026-7007",
+      "invoice_total": "254.10",
+      "purchase_order": "PO-4007",
+      "subtotal": "210.00",
+      "total_tax": "44.10",
+      "vendor_name": "Propre Services S.A.S.",
+      "vendor_vat_id": "FR61954506077"
+    },
+    "expected_issue_codes": [
+      "customer_vat_id_mismatch"
+    ],
+    "filename": "07-fr-wrong-customer-vat.pdf",
+    "language": "fr",
+    "layout": "classic",
+    "pages": 1,
+    "scenario": "wrong_customer_vat"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "EN-2026-8008",
+      "invoice_total": "125.00",
+      "purchase_order": "PO-4008",
+      "subtotal": "100.00",
+      "total_tax": "21.00",
+      "vendor_name": "Lift Safety Europe S.A.S.",
+      "vendor_vat_id": "FR40303265045"
+    },
+    "expected_issue_codes": [
+      "invoice_total_mismatch"
+    ],
+    "filename": "08-en-total-mismatch.pdf",
+    "language": "en",
+    "layout": "compact",
+    "pages": 1,
+    "scenario": "total_mismatch"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "NL-2026-9009",
+      "invoice_total": "169.40",
+      "purchase_order": null,
+      "subtotal": "140.00",
+      "total_tax": "29.40",
+      "vendor_name": "Waterwerk B.V.",
+      "vendor_vat_id": "NL123456782B90"
+    },
+    "expected_issue_codes": [
+      "purchase_order_missing"
+    ],
+    "filename": "09-nl-missing-po.pdf",
+    "language": "nl",
+    "layout": "modern",
+    "pages": 1,
+    "scenario": "missing_purchase_order"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "DE-2026-3098",
+      "invoice_total": "544.50",
+      "purchase_order": "PO-4010",
+      "subtotal": "450.00",
+      "total_tax": "94.50",
+      "vendor_name": "Rhein Wartung GmbH",
+      "vendor_vat_id": "DE136695976"
+    },
+    "expected_issue_codes": [
+      "duplicate_invoice"
+    ],
+    "filename": "10-de-duplicate.pdf",
+    "language": "de",
+    "layout": "classic",
+    "pages": 1,
+    "scenario": "duplicate"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "FR-2026-1111",
+      "invoice_total": "90.75",
+      "purchase_order": "PO-4011",
+      "subtotal": "75.00",
+      "total_tax": "15.75",
+      "vendor_name": "Clair Nettoyage S.A.S.",
+      "vendor_vat_id": "FR61954506077"
+    },
+    "expected_issue_codes": [],
+    "filename": "11-fr-scan-quality.png",
+    "language": "fr",
+    "layout": "compact",
+    "pages": 1,
+    "scenario": "scan_quality"
+  },
+  {
+    "document_type": "invoice",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": "Delta Facilities B.V.",
+      "customer_vat_id": "NL00449544B01",
+      "document_type": "invoice",
+      "due_date": "2026-07-31",
+      "invoice_date": "2026-07-01",
+      "invoice_number": "EN-2026-1212",
+      "invoice_total": "726.00",
+      "purchase_order": "PO-4012",
+      "subtotal": "600.00",
+      "total_tax": "126.00",
+      "vendor_name": "European Equipment S.A.S.",
+      "vendor_vat_id": "FR40303265045"
+    },
+    "expected_issue_codes": [],
+    "filename": "12-en-two-page.pdf",
+    "language": "en",
+    "layout": "modern",
+    "pages": 2,
+    "scenario": "happy_path"
+  },
+  {
+    "document_type": "receipt",
+    "expected": {
+      "currency": "EUR",
+      "customer_name": null,
+      "customer_vat_id": null,
+      "document_type": "receipt",
+      "due_date": null,
+      "invoice_date": "2026-07-19",
+      "invoice_number": null,
+      "invoice_total": "60.50",
+      "purchase_order": null,
+      "subtotal": "50.00",
+      "total_tax": "10.50",
+      "vendor_name": "North Sea Fuel B.V.",
+      "vendor_vat_id": null
+    },
+    "expected_issue_codes": [],
+    "filename": "13-nl-fuel-receipt.png",
+    "language": "nl",
+    "layout": "compact",
+    "pages": 1,
+    "scenario": "fuel_receipt"
+  }
+]

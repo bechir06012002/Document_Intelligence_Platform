@@ -1,0 +1,25 @@
+[project]
+name = "document-review-system-streamlit-app"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "requests==2.34.2",
+    "streamlit==1.62.0",
+]
+
+[dependency-groups]
+dev = [
+  "ruff==0.15.21",
+]
+
+[tool.uv]
+add-bounds = "exact"
+exclude-newer = "7 days"
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

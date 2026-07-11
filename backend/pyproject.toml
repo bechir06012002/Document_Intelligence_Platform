@@ -1,0 +1,40 @@
+[project]
+name = "document-review-system-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "azure-ai-documentintelligence==1.0.2",
+  "azure-identity==1.25.3",
+  "fastapi==0.139.0",
+  "openai==2.45.0",
+  "pydantic==2.13.4",
+  "pydantic-ai-slim[openai]==2.20.0",
+  "pydantic-settings==2.14.2",
+  "python-multipart==0.0.32",
+  "python-stdnum==2.2",
+  "sqlalchemy==2.0.51",
+  "uvicorn[standard]==0.51.0",
+]
+
+[dependency-groups]
+dev = [
+  "ipykernel==7.3.0",
+  "pillow==11.3.0",
+  "reportlab==4.5.1",
+  "ruff==0.15.21",
+]
+
+[tool.uv]
+add-bounds = "exact"
+exclude-newer = "7 days"
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["fastapi.Depends", "fastapi.File"]

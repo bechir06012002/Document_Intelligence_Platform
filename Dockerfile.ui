@@ -1,0 +1,18 @@
+FROM python:3.12-slim
+
+COPY --from=ghcr.io/astral-sh/uv:0.12.1 /uv /uvx /bin/
+
+WORKDIR /app
+ENV PATH="/app/.venv/bin:$PATH"
+
+COPY streamlit_app/pyproject.toml streamlit_app/uv.lock ./
+COPY streamlit_app/app.py ./
+COPY streamlit_app/lib ./lib
+COPY streamlit_app/pages ./pages
+COPY streamlit_app/.streamlit ./.streamlit
+
+RUN uv sync --locked --no-dev
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app.py", "--server.address", "0.0.0.0", "--server.port", "8501"]
