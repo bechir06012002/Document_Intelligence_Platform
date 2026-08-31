@@ -45,5 +45,4 @@ This starts the API on `http://127.0.0.1:8000` and the UI on `http://127.0.0.1:8
 `Dockerfile.api` and `Dockerfile.ui` build the two services as separate images, deployed as two Azure Container Apps sharing one Container Apps Environment. Azure credentials are passed as Container Apps secrets, never baked into the image.
 
 ## Demo video
-
-🎥 _Coming soon._
+https://github.com/user-attachments/assets/c79b5758-c5d8-4a30-9c91-669a3cedc29d
