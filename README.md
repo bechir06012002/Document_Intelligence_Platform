@@ -1,5 +1,5 @@
 # Document Review System
-
+ 
 An AI-assisted invoice and receipt review app for a fictional facilities-management company. It extracts and validates supplier documents in English, Dutch, German, and French, flags policy issues before they reach bookkeeping, and lets a reviewer correct, categorize, and approve or reject each one.
 
 ## How it works
