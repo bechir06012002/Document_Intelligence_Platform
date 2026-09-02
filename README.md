@@ -158,6 +158,3 @@ https://github.com/user-attachments/assets/c79b5758-c5d8-4a30-9c91-669a3cedc29d
 
 ---
 
-**[❤️ API Health Check](https://invoice-review.blacktree-b3a09823.westeurope.azurecontainerapps.io/health)**
-
-</div>
